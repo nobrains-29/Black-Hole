@@ -1,0 +1,28 @@
+body {
+   background: #000000;
+   display: flex;
+   height: 100vh;
+   align-items: center;
+   justify-content: center;
+   filter: blur(5px);
+}
+
+a , a:before , a:after {
+    display: flex;
+    border-radius: 50%;
+    animation: ani 8s linear infinite;
+}
+
+@keyframes ani{
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(-360deg)}
+}
+
+a {
+    width: 50vh;
+    height: 50vh;
+    box-shadow: 1vh 0 5vh 2vh #ff5500,
+        inset   -2vh 0 3vh 4vh #ff8800,
+                -1vh -1vh 35vh 0 #ff6600;
+}
+
